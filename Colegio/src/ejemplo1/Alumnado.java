@@ -1,17 +1,17 @@
 package ejemplo1;
 
-public class Alumno {
+public class Alumnado {
 	/* Constructor */
 	protected String nombre;
 	protected int edad;
 	protected String apellido;
 
-	public Alumno(String a, int b) {
+	public Alumnado(String a, int b) {
 		nombre = a;
 		edad = b;
 	}
 	
-	public Alumno(String a, int b,String ap) {
+	public Alumnado(String a, int b,String ap) {
 		nombre = a;
 		edad = b;
 		apellido = ap;

@@ -1,19 +1,19 @@
 package ejemplo1;
 
 public class Lista {
-	private Alumno[] listaAlumno;
+	private Alumnado[] listaAlumno;
 	private int numeroAlumnos;
 
 	/* Constructor */
 	/* con un parametro */
 	public Lista(int a) {
-		listaAlumno = new Alumno[a];
+		listaAlumno = new Alumnado[a];
 		numeroAlumnos = 0;
 	}
 
 	/* Añadir un alumno a la lista */
 	/* Hay que pasar un objeto alumno */
-	public void añadirAlumno(Alumno a) {
+	public void añadirAlumno(Alumnado a) {
 		listaAlumno[numeroAlumnos] = a;
 		numeroAlumnos++;
 	}
@@ -40,7 +40,7 @@ public class Lista {
 		return c;
 	}
 
-	public Alumno[] getListaAlumno() {
+	public Alumnado[] getListaAlumno() {
 		return listaAlumno;
 	}
 

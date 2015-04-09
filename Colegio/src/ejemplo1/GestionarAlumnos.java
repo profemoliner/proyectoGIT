@@ -10,17 +10,17 @@ public class GestionarAlumnos {
 		listaDAW = new Lista(3);
 		
 		/* Creo dos alumnos */
-		Alumno alumno1;
-		Alumno alumno2;
-		alumno1 = new Alumno("Pedro", 19);
-		alumno2 = new Alumno("María", 18);
+		Alumnado alumno1;
+		Alumnado alumno2;
+		alumno1 = new Alumnado("Pedro", 19);
+		alumno2 = new Alumnado("María", 18);
 		
 		/* Añadimos los alumnos a la lista */
 		listaDAW.añadirAlumno(alumno1);
 		listaDAW.añadirAlumno(alumno2);
 		
 		/* Obtenemos los valores de los atributos de listaDAW */
-		Alumno[] miLista;
+		Alumnado[] miLista;
 		miLista = listaDAW.getListaAlumno();
 		int numero;
 		numero = listaDAW.getNumeroAlumnos();
@@ -40,7 +40,7 @@ public class GestionarAlumnos {
 		}
 	}
 
-	private static void mostrarAlumnos(Alumno[] miLista, int numero) {
+	private static void mostrarAlumnos(Alumnado[] miLista, int numero) {
 		for (int i = 0; i < numero; i++) {
 			System.out.println(miLista[i].getNombre() + " "
 					+ miLista[i].getEdad());
