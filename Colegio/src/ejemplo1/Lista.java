@@ -5,12 +5,14 @@ public class Lista {
 	private int numeroAlumnos;
 
 	/* Constructor */
+	/* con un parametro */
 	public Lista(int a) {
 		listaAlumno = new Alumno[a];
 		numeroAlumnos = 0;
 	}
 
 	/* Añadir un alumno a la lista */
+	/* Hay que pasar un objeto alumno */
 	public void añadirAlumno(Alumno a) {
 		listaAlumno[numeroAlumnos] = a;
 		numeroAlumnos++;
