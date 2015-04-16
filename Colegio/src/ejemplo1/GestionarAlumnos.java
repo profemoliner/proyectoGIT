@@ -6,15 +6,12 @@ public class GestionarAlumnos {
 	public static void main(String[] args) {
 		
 		/* Crea una lista de alumnos */
-		Lista listaDAW;
-		listaDAW = new Lista(3);
+		Lista listaDAW = new Lista(3);
 		
 		/* Creo dos alumnos */
-		Alumnado alumno1;
-		Alumnado alumno2;
-		alumno1 = new Alumnado("Pedro", 19);
-		alumno2 = new Alumnado("María", 18);
-		
+		Alumnado alumno1 = new Alumnado("Pedro", 19);
+		Alumnado alumno2 = new Alumnado("María", 18);
+		 		
 		/* Añadimos los alumnos a la lista */
 		listaDAW.añadirAlumno(alumno1);
 		listaDAW.añadirAlumno(alumno2);
